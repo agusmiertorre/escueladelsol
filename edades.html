@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2, 3, 4 y 5 años – Escuela Del Sol</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .edad-p { position:relative; padding-left:18px; }
+    .edad-p::before {
+      content:'';
+      position:absolute;
+      left:0;
+      top:6px;
+      width:7px;
+      height:7px;
+      background:url('images/circulito.png') no-repeat center/contain;
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="images/logo-slogan.svg" alt="Escuela Del Sol – 60 años sembrando con honestidad" style="height:50px; width:auto;">
+    </a>
+    <nav class="nav-desktop">
+      <div class="nav-row">
+        <div class="nav-item">
+          <a class="nav-link" href="index.html">Inicio <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="comienzos.html">Comienzos</a>
+            <a href="principios.html">Principios</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="testimonios.html">Testimonios</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link active" href="jardin.html">Jardín <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="edades.html">2, 3, 4 y 5 años</a>
+            <a href="actividades-jardin.html">Actividades jardín</a>
+            <a href="jornada-extendida.html">Jornada extendida</a>
+            <a href="pasaje-a-primaria.html">Pasaje a primaria</a>
+          </div>
+        </div>
+        <a class="nav-link" href="primaria.html">Primaria</a>
+        <a class="nav-link" href="referentes.html">Referentes</a>
+        <div class="nav-item">
+          <a class="nav-link" href="talleres.html">Talleres <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="talleres-compartidos.html">Compartidos</a>
+            <a href="novedades.html#talleres-optativos">Talleres Optativos</a>
+          </div>
+        </div>
+        <a class="nav-link" href="horarios.html">Horarios</a>
+        <a class="nav-link" href="exalumnos.html">Exalumnos</a>
+        <a class="nav-link" href="fotos.html">Fotos</a>
+      </div>
+      <div class="nav-row">
+        <a class="nav-link" href="60-anos.html">60 años</a>
+        <a class="nav-link" href="la-plaza.html">"La Plaza"</a>
+        <a class="nav-link" href="novedades.html">Novedades</a>
+        <a class="nav-link" href="actividades-2026.html">2026 Actividades</a>
+        <a class="nav-link nav-link-cta" href="admision-2026.html">Admisión 2026-2027</a>
+      </div>
+    </nav>
+    <button class="hamburger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile">
+    <div class="mob-parent-row"><a href="index.html" class="mob-parent-link">Inicio</a><span class="mob-toggle">▾</span></div>
+    <div class="mob-sub" style="display:none">
+      <a href="comienzos.html">Comienzos</a>
+      <a href="principios.html">Principios</a>
+      <a href="objetivos.html">Objetivos</a>
+      <a href="testimonios.html">Testimonios</a>
+    </div>
+    <div class="mob-parent-row"><a href="jardin.html" class="mob-parent-link">Jardín</a><span class="mob-toggle">▾</span></div>
+    <div class="mob-sub" style="display:none">
+      <a href="edades.html">2, 3, 4 y 5 años</a>
+      <a href="actividades-jardin.html">Actividades jardín</a>
+      <a href="jornada-extendida.html">Jornada extendida</a>
+      <a href="pasaje-a-primaria.html">Pasaje a primaria</a>
+    </div>
+    <a href="primaria.html">Primaria</a>
+    <a href="referentes.html">Referentes</a>
+    <div class="mob-parent-row"><a href="talleres.html" class="mob-parent-link">Talleres</a><span class="mob-toggle">▾</span></div>
+    <div class="mob-sub" style="display:none">
+      <a href="talleres-compartidos.html">Compartidos</a>
+      <a href="novedades.html#talleres-optativos">Talleres Optativos</a>
+    </div>
+    <a href="horarios.html">Horarios</a>
+    <a href="exalumnos.html">Exalumnos</a>
+    <a href="fotos.html">Fotos</a>
+    <a href="60-anos.html">60 años</a>
+    <a href="la-plaza.html">"La Plaza"</a>
+    <a href="novedades.html">Novedades</a>
+    <a href="actividades-2026.html">2026 Actividades</a>
+    <a href="admision-2026.html" class="nav-link-cta">Admisión 2026-2027</a>
+  </nav>
+</header>
+
+<!-- 2, 3, 4 Y 5 AÑOS -->
+<section class="section section-orange" style="padding:20px;">
+  <div class="wrap-narrow">
+    <h1 style="font-family:'Lora', serif; font-weight:400; font-size:32px; line-height:1.3; margin:0; color:var(--white); text-shadow:2px 2px 4px rgba(0,0,0,0.25);">2, 3, 4 y 5 años</h1>
+  </div>
+</section>
+
+<!-- 2 años -->
+<section class="section section-white" id="dos">
+  <div class="wrap" style="text-align:left;">
+    <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+      <div style="text-align:center; flex-shrink:0;">
+        <img src="images/edad-2.svg" alt="2 años" style="width:380px; height:380px; object-fit:contain;">
+        <p style="font-family:'Nunito', sans-serif; font-size:18px; color:#000; margin-top:-10px; text-align:center; width:100%;">Años</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-family:'Lora', serif; font-weight:400; font-size:26px; line-height:1.3; margin-bottom:20px; text-shadow:2px 2px 4px rgba(0,0,0,0.25);">2 años</h2>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El ritmo de trabajo será tranquilo, sin exigencias.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El niño/a de dos años que ingresa al Jardín realiza su primera experiencia de socialización fuera del núcleo familiar. Si bien ya no es un bebé que depende totalmente de su mamá la necesita mucho y el vínculo es muy fuerte. La integración deberá ser, por lo tanto, lenta y paulatina.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El/la niño/a de dos años es todavía un deambulador egocéntrico, posesivo y celoso. Le cuesta compartir y esperar. El "no" está siempre a flor de labios y es curioso/a por naturaleza. Ha comenzado a controlar sus esfínteres y su capacidad de juego se concentra en su cuerpo, en el de las personas que lo rodean y en sus objetos preferidos. Si bien su juego es paralelo y no compartido siente satisfacción en la compañía de otros.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Teniendo en cuenta estas características evolutivas, la maestra de los niños/as de dos años deberá saber escuchar, ver, percibir las necesidades de cada uno/a de sus alumnos/as. Deberá organizar las actividades siguiendo el ritmo del grupo y respetando el tiempo interno de chicas y chicos y las marcadas diferencias individuales.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El ritmo de trabajo deberá ser lento, sin exigencias que presionen sobre las verdaderas necesidades e intereses de los niños y niñas.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify;">
+          La actividad se nucleará en torno al juego corporal, la vinculación con otros y otras, el espacio y los objetos, las primeras técnicas plásticas, el modelado con distintos materiales, el juego en el arenero, y la internalización de rutinas y hábitos de orden, higiene y buena convivencia.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 años -->
+<section class="section" style="background:var(--orange-light);" id="tres">
+  <div class="wrap" style="text-align:left;">
+    <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+      <div style="text-align:center; flex-shrink:0;">
+        <img src="images/edad-3.svg" alt="3 años" style="width:380px; height:380px; object-fit:contain;">
+        <p style="font-family:'Nunito', sans-serif; font-size:18px; color:#000; margin-top:-10px; text-align:center; width:100%;">Años</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-family:'Lora', serif; font-weight:400; font-size:26px; line-height:1.3; margin-bottom:20px; text-shadow:2px 2px 4px rgba(0,0,0,0.25);">3 años</h2>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El ritmo de tarea lo marca el grupo.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El niño/a de tres años que asiste al Jardín realiza, por lo general, su primera experiencia de socialización y está más preparado afectivamente para separarse de su familia que a los dos años.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Sigue estando en una etapa de neto egocentrismo, pero puede vincularse mejor socialmente con sus pares y con otros adultos. Tiende a independizarse y a reafirmar la expresión de sus gustos y deseos, los cuales comienzan a definirse.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Disfruta en el juego, de ambos sexos por igual, y puede organizarse para dramatizar situaciones cotidianas. Disfruta con las rimas y las canciones y puede seguir la narración de cuentos. También se interesará en conversar y escuchar relatos relacionados con temas cercanos a sus intereses, tales como la familia, el Jardín, los animales, los paseos, los cumpleaños, el nacimiento de un hermanito o hermanita.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          También está dispuesto/a a conocer y experimentar variadas técnicas expresivas del lenguaje artístico. La actividad corporal es abundante y su desarrollo psicomotor le permite desplazarse, correr y trepar con más seguridad en los espacios abiertos. Puede escuchar y cumplir consignas sencillas en relación a las actividades. La maestra de la Sala de 3 tiene el privilegio de poder iniciar a sus chicos y chicas en un campo rico y variado en cuanto a propuestas de trabajo y juego.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify;">
+          El ritmo de la tarea lo marca el grupo, y la incentivación por parte del maestro cumple un rol fundamental en esta etapa evolutiva.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 años -->
+<section class="section section-white" id="cuatro">
+  <div class="wrap" style="text-align:left;">
+    <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+      <div style="text-align:center; flex-shrink:0;">
+        <img src="images/edad-4.svg" alt="4 años" style="width:380px; height:380px; object-fit:contain;">
+        <p style="font-family:'Nunito', sans-serif; font-size:18px; color:#000; margin-top:-10px; text-align:center; width:100%;">Años</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-family:'Lora', serif; font-weight:400; font-size:26px; line-height:1.3; margin-bottom:20px; text-shadow:2px 2px 4px rgba(0,0,0,0.25);">4 años</h2>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El niño/a de cuatro años manifiesta grandes cambios de crecimiento y desarrollo en relación con el de tres. Es más independiente de su maestra y su atención está más puesta en su grupo de pares. Su nivel de sociabilidad ha crecido y comienza a seleccionar a sus amistades. Esto permitirá un enriquecimiento del juego y de las situaciones de dramatización.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Su vocabulario se ha ampliado y también la forma de expresar verbalmente su pensamiento. Es charlatán/a y conversador/a por naturaleza. Esto le permitirá al docente trabajar con juegos de palabras, humor del absurdo, ecos, poesías y canciones.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Su período atencional se ha incrementado y disfrutará escuchando narraciones que podrá reconstruir verbalmente y representar en sus dibujos y dramatizaciones.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Podrá permanecer más tiempo concentrado/a, sentado/a, realizando actividades manuales y de desafío intelectual. Le encantará aprender y conversar sobre ciertos temas relacionados con la naturaleza, el cosmos, la alimentación, la salud y las comunicaciones, entre otros.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Por su sensibilidad y la aparición de temores relacionados con la muerte, la oscuridad, los ruidos, su curiosidad por lo sexual, está en un período de cuestionamiento constante hacia el adulto. El/la docente deberá poder escuchar, responder y conversar sobre estos temas con claridad cotidianamente.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify;">
+          Niñas y niños de cuatro años están en un período altamente creativo y esta etapa será especialmente rica en el área de los lenguajes plásticos, la narración, la dramatización y el juego corporal.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 años -->
+<section class="section" style="background:var(--orange-light);" id="cinco">
+  <div class="wrap" style="text-align:left;">
+    <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+      <div style="text-align:center; flex-shrink:0;">
+        <img src="images/edad-5.svg" alt="5 años" style="width:380px; height:380px; object-fit:contain;">
+        <p style="font-family:'Nunito', sans-serif; font-size:18px; color:#000; margin-top:-10px; text-align:center; width:100%;">Años</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-family:'Lora', serif; font-weight:400; font-size:26px; line-height:1.3; margin-bottom:20px; text-shadow:2px 2px 4px rgba(0,0,0,0.25);">5 años</h2>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Una etapa profundamente socializadora.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          El/la niño/a de cinco años podrá organizar juegos grupales sin la intervención del adulto/a y tenderá a la diferenciación y multiplicidad de roles.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Su lenguaje, ya ampliamente desarrollado, le permitirá hacer relatos precisos sobre las experiencias vividas. También, en la expresión gráfica tenderá a ser más realista que en la etapa anterior.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Su sentido de la responsabilidad y su tiempo de concentración le permitirán abordar un aprendizaje más formal.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Las características de su edad permitirán que pueda expresarse a través del juego dramático, simbólico, de imaginación y del lenguaje.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Podrá conjuntamente con maestras y maestros, planificar y evaluar las actividades que realice.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Estará capacitado/a para establecer relaciones temporales, espaciales, causales, de correspondencia y orden, manejándose en el espacio gráfico con precisión.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Podrá escuchar, respetar y compartir interactuando en un grupo. Manifestará en todas sus actitudes una curiosidad creciente y una capacidad de asombro que le permitirán encauzarse hacia las tareas de aprendizaje.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify; margin-bottom:6px;">
+          Su demanda de atención y de respuestas a sus inquietudes de conocimiento es constante.
+        </p>
+        <p class="edad-p" style="font-family:'Lora', serif; font-weight:400; font-size:14px; line-height:1.3; text-align:justify;">
+          Su independencia del adulto es mayor a nivel socio-emocional y su grupo de pares es lo más importante en esta etapa profundamente socializadora.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-address">
+      <ul>
+        <li>Escuela Del Sol A-619</li>
+        <li>Avenida Crámer 450</li>
+        <li>(1426) Buenos Aires – Argentina</li>
+        <li>Tel: +(5411) 4553-6009/6351</li>
+      </ul>
+    </div>
+    <div class="footer-center">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/escuelads/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/escueladelsolok/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@escueladelsol8800" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="footer-email">E-mail: <a href="mailto:recepcion@eds.edu.ar">recepcion@eds.edu.ar</a></p>
+      <p class="footer-copy">© 2024. República Argentina.<br>Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
