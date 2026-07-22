@@ -801,6 +801,10 @@ textarea.form-control { height: 90px; resize: vertical; }
   .hamburger   { display: flex; }
 }
 
+@media (max-width: 900px) {
+  #libreria-momo .gallery-grid { margin-top: 0 !important; }
+}
+
 @media (max-width: 600px) {
   .site-banner { font-size: 0.9rem; padding: 14px 16px; }
   .sec-title   { font-size: 1.45rem !important; }
