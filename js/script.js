@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const formExalumnos = document.getElementById('form-exalumnos');
   if (formExalumnos) {
     // Los name="entry.XXXX" del HTML corresponden a las preguntas de este Google Form.
-    const EXALUMNOS_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScov7vqMVV1C0XTLu2A5GjMDi6qT83azQr96QqcmzBtnDSyMQ/formResponse';
+    const EXALUMNOS_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe573zO8Pvn9jQTaI9sMvJz5PTDTZOT4QZ4ZzQet0vjloW_hQ/formResponse';
 
     formExalumnos.addEventListener('submit', function (e) {
       e.preventDefault();
