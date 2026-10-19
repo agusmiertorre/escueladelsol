@@ -93,31 +93,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ---------- Formulario Exalumnos -> Google Sheets ----------
+  // ---------- Formulario Exalumnos -> Google Form "Exalumnos Escuela Del Sol" ----------
   const formExalumnos = document.getElementById('form-exalumnos');
   if (formExalumnos) {
-    // Pegá acá la URL de tu Google Apps Script Web App una vez que la publiques.
-    const EXALUMNOS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz7CLEmq0XiRi0ocPOw6sklrpaFcRLl-0gE-l3p4T_rS_0jdKRolm9L0hmMahvqyI4V/exec';
+    // Los name="entry.XXXX" del HTML corresponden a las preguntas de este Google Form.
+    const EXALUMNOS_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScov7vqMVV1C0XTLu2A5GjMDi6qT83azQr96QqcmzBtnDSyMQ/formResponse';
 
     formExalumnos.addEventListener('submit', function (e) {
       e.preventDefault();
       const statusEl = document.getElementById('form-exalumnos-status');
       const submitBtn = formExalumnos.querySelector('button[type="submit"]');
 
-      if (EXALUMNOS_SCRIPT_URL.indexOf('PEGAR_AQUI') !== -1) {
-        statusEl.textContent = 'El formulario todavía no está conectado a la planilla.';
-        statusEl.style.display = 'block';
-        return;
-      }
-
       submitBtn.disabled = true;
       const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Enviando...';
 
-      fetch(EXALUMNOS_SCRIPT_URL, {
+      fetch(EXALUMNOS_FORM_URL, {
         method: 'POST',
         mode: 'no-cors',
-        body: new FormData(formExalumnos)
+        body: new URLSearchParams(new FormData(formExalumnos))
       }).then(function () {
         statusEl.textContent = '¡Gracias! Tus datos fueron enviados correctamente.';
         statusEl.style.display = 'block';
