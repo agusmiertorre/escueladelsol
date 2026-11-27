@@ -835,6 +835,7 @@ textarea.form-control { height: 90px; resize: vertical; }
   #biblioteca-biro .gallery-grid img,
   #biblioteca-biro .gallery-grid img:nth-child(13) { grid-column: auto; }
   #biblioteca-biro .gallery-grid img:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
+  #trici-2026 .gallery-grid img:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
   .preguntas-img  { margin-bottom: -25px !important; }
   .preguntas-text { line-height: 1.4 !important; margin-top: 0 !important; }
   .comienzos-img { margin: 0 auto !important; }
