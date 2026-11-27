@@ -177,6 +177,57 @@
   </div>
 </footer>
 
+<!-- ===== Ventana emergente: Actividades 2026 ===== -->
+<style>
+#popup-act { position:fixed; inset:0; z-index:9999; display:none; align-items:center; justify-content:center; padding:20px; background:rgba(40,30,10,0.55); }
+#popup-act.abierto { display:flex; animation:popFondo .3s ease; }
+#popup-act .popup-caja { position:relative; width:100%; max-width:440px; background:#fff; border-radius:22px; border-top:6px solid var(--orange); box-shadow:0 20px 50px rgba(0,0,0,0.3); padding:28px 26px 26px; text-align:center; font-family:'Lora', serif; animation:popCaja .45s cubic-bezier(.2,1.3,.4,1); }
+#popup-act .popup-fotos { display:flex; justify-content:center; margin:6px 0 18px; }
+#popup-act .popup-fotos img { width:104px; height:104px; object-fit:cover; border-radius:14px; border:3px solid #fff; box-shadow:0 6px 16px rgba(0,0,0,0.18); }
+#popup-act .popup-fotos img:nth-child(1) { transform:rotate(-7deg) translateY(4px); }
+#popup-act .popup-fotos img:nth-child(2) { transform:scale(1.08); position:relative; z-index:2; margin:0 -10px; }
+#popup-act .popup-fotos img:nth-child(3) { transform:rotate(7deg) translateY(4px); }
+#popup-act h2 { font-size:1.45rem; color:var(--orange-dark); margin:0 0 10px; line-height:1.25; }
+#popup-act p { font-size:0.98rem; color:#4a4a4a; line-height:1.55; margin:0 0 22px; }
+#popup-act .popup-boton { display:inline-block; background:var(--orange); color:#fff; font-weight:700; font-size:1rem; padding:13px 28px; border-radius:30px; text-decoration:none; box-shadow:0 6px 16px rgba(232,160,32,0.4); transition:transform .2s, background .2s; }
+#popup-act .popup-boton:hover { background:var(--orange-dark); transform:translateY(-2px); }
+#popup-act .popup-boton:focus { outline:3px solid var(--orange-light); outline-offset:3px; }
+#popup-act .popup-luego { display:block; margin:14px auto 0; background:none; border:none; font-family:inherit; font-size:0.88rem; color:#777; text-decoration:underline; cursor:pointer; padding:8px; }
+#popup-act .popup-cerrar { position:absolute; top:10px; right:12px; width:44px; height:44px; border:none; background:none; font-size:28px; line-height:1; color:#999; cursor:pointer; border-radius:50%; }
+#popup-act .popup-cerrar:hover { color:var(--orange-dark); background:var(--orange-pale); }
+@keyframes popFondo { from { opacity:0; } to { opacity:1; } }
+@keyframes popCaja { from { opacity:0; transform:scale(.85) translateY(20px); } to { opacity:1; transform:none; } }
+@media (max-width:420px) { #popup-act .popup-fotos img { width:84px; height:84px; } #popup-act h2 { font-size:1.25rem; } }
+</style>
+<div id="popup-act" role="dialog" aria-modal="true" aria-labelledby="popup-act-titulo">
+  <div class="popup-caja">
+    <button type="button" class="popup-cerrar" aria-label="Cerrar">&times;</button>
+    <div class="popup-fotos" aria-hidden="true">
+      <img src="images/trici-2.jpg" alt="">
+      <img src="images/campamento-1.jpg" alt="">
+      <img src="images/biblioteca-biro-1.jpg" alt="">
+    </div>
+    <h2 id="popup-act-titulo">¡Mirá todo lo que vivimos este año!</h2>
+    <p>Campamentos, la Trici, visitas a museos y bibliotecas, talleres y mucho más. Te invitamos a recorrer las actividades 2026 de nuestros chicos y chicas.</p>
+    <a href="actividades-2026.html" class="popup-boton">Ver Actividades 2026 →</a>
+    <button type="button" class="popup-luego">Ahora no</button>
+  </div>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('popup-act'); if(!pop) return;
+  var visto=false; try { visto=sessionStorage.getItem('popupAct2026')==='1'; } catch(e) {}
+  if(visto) return;
+  function cerrar(){ pop.classList.remove('abierto'); try { sessionStorage.setItem('popupAct2026','1'); } catch(e) {} document.removeEventListener('keydown',tecla); }
+  function tecla(e){ if(e.key==='Escape') cerrar(); }
+  pop.querySelector('.popup-cerrar').addEventListener('click',cerrar);
+  pop.querySelector('.popup-luego').addEventListener('click',cerrar);
+  pop.querySelector('.popup-boton').addEventListener('click',function(){ try { sessionStorage.setItem('popupAct2026','1'); } catch(e) {} });
+  pop.addEventListener('click',function(e){ if(e.target===pop) cerrar(); });
+  setTimeout(function(){ pop.classList.add('abierto'); document.addEventListener('keydown',tecla); pop.querySelector('.popup-boton').focus(); },1200);
+})();
+</script>
+
 <script src="js/script.js"></script>
 </body>
 </html>
