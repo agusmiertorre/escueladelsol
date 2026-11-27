@@ -607,10 +607,6 @@ textarea.form-control { height: 90px; resize: vertical; }
 .gallery-grid-tall img { aspect-ratio: 10/11; }
 #lectura .gallery-grid img { aspect-ratio: 3/4; }
 #talleres-optativos .gallery-grid img { aspect-ratio: 2/3; }
-/* Biblioteca Biro: centrar las últimas 3 fotos (grilla de 8 columnas, cada foto ocupa 2) */
-#biblioteca-biro .gallery-grid { grid-template-columns: repeat(8, 1fr); }
-#biblioteca-biro .gallery-grid img { grid-column: span 2; }
-#biblioteca-biro .gallery-grid img:nth-child(13) { grid-column: 2 / span 2; }
 
 /* =====================================================
    CARRUSEL de fotos
@@ -832,9 +828,6 @@ textarea.form-control { height: 90px; resize: vertical; }
   .program-tab  { font-size: 0.78rem; padding: 8px 12px; }
   .form-card    { padding: 24px 18px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  #biblioteca-biro .gallery-grid img,
-  #biblioteca-biro .gallery-grid img:nth-child(13) { grid-column: auto; }
-  #biblioteca-biro .gallery-grid img:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
   #trici-2026 .gallery-grid img:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
   .preguntas-img  { margin-bottom: -25px !important; }
   .preguntas-text { line-height: 1.4 !important; margin-top: 0 !important; }
